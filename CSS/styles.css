@@ -1,0 +1,36 @@
+@font-face {
+    font-family: MagicOwl;
+    font-weight: bold;
+    src: url("../MagicOwl.otf") format("opentype");
+}
+
+.article{
+	background-color: #FFBF66;
+	border-radius: 10px;
+	padding: 20px 20px 20px 20px;
+	margin-top: 20px;
+	height: 15vh;
+	font-size: 20px;
+	box-shadow: -8px 9px 17px -1px rgba(0,0,0,0.63);
+	-webkit-box-shadow: -8px 9px 17px -1px rgba(0,0,0,0.63);
+	-moz-box-shadow: -8px 9px 17px -1px rgba(0,0,0,0.63);
+}
+.container{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+body{
+	background-color: #F0BE86;
+	color: #00353F;
+	font-family: MagicOwl;
+}
+
+h1 {
+    text-align:center;
+    margin: 50px 0 50px 0 ;
+    font-size: 78px;
+}
+
