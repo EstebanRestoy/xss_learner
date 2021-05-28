@@ -33,4 +33,33 @@ h1 {
     margin: 50px 0 50px 0 ;
     font-size: 78px;
 }
+input{
+	width: 30%;
+	height: 7vh;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	font-size: 30px;
+}
+
+button{
+	margin-top: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: green;
+	border-style: none;
+	box-shadow: 2px 2px 2px;
+	font-size: 40px;
+	font-family: MagicOwl;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	animation: ease-in;
+	transition: 1s;
+}
+
+button:hover{
+	transition: 1s;
+	transform: scale(1.2);
+}
 
