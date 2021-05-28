@@ -20,41 +20,164 @@
 
             <section>
                 <h2>Faille XSS / CSRF </h2>
-                <footer>Lise Antoine Victor Esteban</footer>
+                <p>Lise Antoine Victor Esteban</p>
             </section>
 
-
-
-            <section data-auto-animate data-auto-animate-id="a">
+            <section data-auto-animate>
                 <h3>XSS</h3>
             </section>
 
-            <section data-auto-animate data-auto-animate-id="a">
+            <section data-auto-animate>
                 <h3>Cross-Site Scripting</h3>
             </section>
 
-            <section data-auto-animate data-auto-animate-id="a">
-
+            <section data-auto-animate>
                 <h3>Cross-Site Scripting</h3>
                 <p>CSS</p>
             </section>
 
-            <section data-auto-animate data-auto-animate-id="a">
+            <section data-auto-animate>
                 <h3>Cross-Site Scripting</h3>
-                <p>Faille CSS ?</p>
+                <div class="r-hstack">
+                    <p>Faille CSS ?</p>
+                </div>
             </section>
 
-            <section data-auto-animate data-auto-animate-id="a">
+            <section data-auto-animate>
                 <h3>Cross-Site Scripting</h3>
-                <p>Faille CSS ?</p>
-                <img data-src="/dist/images/css.png" style="width: 10%;">
+                <div class="r-hstack">
+                    <p>Faille CSS ? => </p>
+                    <img data-src="/dist/images/css.png" style="width: 10%;" alt="css image">
+                </div>
             </section>
 
-            <section data-auto-animate data-auto-animate-id="a">
-                <h3>Cross-Site Scripting</h3>
-                <p>XSS</p>
-                <p><b>X</b> pour le <b>Cross</b></p>
+            <section>
+                <h2>Theorie</h2>
+            </section>
 
+            <section data-auto-animate>
+                <h2>XSS</h2>
+                <ul>
+                    <li>Sites web</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate>
+                <h2>XSS</h2>
+                <ul>
+                    <li>Sites web</li>
+                    <li>7/10 sur OWASP</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate>
+                <h2>XSS</h2>
+                <ul>
+                    <li>Sites web</li>
+                    <li>7/10 sur OWASP</li>
+                    <li>2005</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Comment ca marche ?</h2>
+            </section>
+
+            <section>
+                <h2>Le principe</h2>
+                <p>Injecter un script dans un site web dans le but qu'il soit éxécuté coté client</p>
+                <img data-src="/dist/images/js.png" style="width: 10%;" alt="js image">
+            </section>
+            <section>
+                <section>
+                    <h2>Exemple</h2>
+                </section>
+
+                <section>
+                    <img data-src="/dist/images/Dealabs_logo.png" style="width: 80%;" alt="dealabs logo">
+                </section>
+
+                <section>
+                    <img data-src="/dist/images/delabs_home.png" style="width: 80%;" alt="dealabs home">
+                </section>
+
+                <section>
+                    <img data-src="/dist/images/dealabs_create_deal.png" style="width: 50%;" alt="dealabs home">
+                </section>
+
+                <section data-auto-animate>
+                    <img data-src="/dist/images/dealabs_desc.png" style="width: 50%;" alt="dealabs home">
+                </section>
+
+                <section data-auto-animate>
+                    <img data-src="/dist/images/dealabs_desc.png" style="width: 30%;" alt="dealabs home">
+                    <img data-src="/dist/images/Dealabs_hello.png" style="width: 80%;" alt="dealabs home">
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Exemple</h2>
+                    <p>source medium.com</p>
+                </section>
+
+                <section>
+                    <img data-src="/dist/images/XSS_URL.png" style="width: 80%;" alt="dealabs home">
+                </section>
+
+                <section>
+                    <img data-src="/dist/images/XSS_URL_2.png" style="width: 80%;" alt="dealabs home">
+                </section>
+            </section>
+
+            <section>
+                <h2>Les applications</h2>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Redirection</h3>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Redirection</h3>
+                <p>hameçonnage</p>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Vol d'informations</h3>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Vol d'informations</h3>
+                <p>
+                    <strong>Session</strong> et les <strong>Cookies</strong>
+                </p>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Rendre indisponible le service</h3>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Rendre indisponible le service</h3>
+                <p>
+                    <strong>Boucle infinie</strong> d'alertes
+                </p>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Rendre indisponible le service</h3>
+                <p>
+                    <strong>Boucle infinie</strong> d'alertes
+                </p>
+                <p>
+                    <strong>Refresh</strong> de la page
+                </p>
+            </section>
+
+
+            <section>
+                <h2>CSRF</h2>
             </section>
 
 
@@ -207,6 +330,8 @@
 
     <script src="../dist/reveal.js"></script>
     <script src="../plugin/math/math.js"></script>
+    <script src="../plugin/zoom/zoom.js"></script>
+
     <script>
         Reveal.initialize({
             history: true,
@@ -223,7 +348,7 @@
                 }
             },
 
-            plugins: [RevealMath]
+            plugins: [RevealMath, RevealZoom]
         });
     </script>
 
