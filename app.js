@@ -1,7 +1,7 @@
 
 const express = require('express')
 const app = express()
-const port = 8888
+const port = 80
 var path = require('path');
 
 app.get('/', (req, res) => {
@@ -14,6 +14,6 @@ app.get('/slides', (req, res) => {
 app.use(express.static(path.join(__dirname, '/slides/')));
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
