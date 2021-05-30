@@ -114,7 +114,6 @@
                     <img data-src="/dist/images/Dealabs_hello.png" style="width: 80%;" alt="dealabs home">
                 </section>
             </section>
-
             <section>
                 <section>
                     <h2>Exemple</h2>
@@ -129,31 +128,25 @@
                     <img data-src="/dist/images/XSS_URL_2.png" style="width: 80%;" alt="dealabs home">
                 </section>
             </section>
-
             <section>
                 <h2>Les applications</h2>
             </section>
-
             <section data-auto-animate>
                 <h3>Redirection</h3>
             </section>
-
             <section data-auto-animate>
                 <h3>Redirection</h3>
                 <p>hameçonnage</p>
             </section>
-
             <section data-auto-animate>
                 <h3>Vol d'informations</h3>
             </section>
-
             <section data-auto-animate>
                 <h3>Vol d'informations</h3>
                 <p>
                     <strong>Session</strong> et les <strong>Cookies</strong>
                 </p>
             </section>
-
             <section data-auto-animate>
                 <h3>Vol d'informations</h3>
                 <p>
@@ -174,7 +167,6 @@
                     <strong>Boucle infinie</strong> d'alertes
                 </p>
             </section>
-
             <section data-auto-animate>
                 <h3>Rendre indisponible le service</h3>
                 <p>
@@ -233,6 +225,25 @@
             </section>
 
             <section data-auto-animate>
+                <h2>CRSF</h2>
+            </section>
+
+            <section data-auto-animate>
+                <h2>CRSF</h2>
+                <ul>
+                    <li>Top 7/10 sur OWASP 2010 => 2013</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate>
+                <h2>CRSF</h2>
+                <ul>
+                    <li>Top 7/10 sur OWASP 2010 => 2013</li>
+                    <li>Attention tout de même</li>
+                </ul>
+            </section>
+
+            <section data-auto-animate>
                 <h3>CSRF Token</h3>
             </section>
 
@@ -250,22 +261,22 @@
                     <li>Sécurise les requêtes <br /><i>ex : ?id=27&<strong>token=45421587d1s548s</strong></i></li>
                 </ul>
             </section>
-
-            <section data-auto-animate>
-                <h3>CSRF Token</h3>
-                <ul>
-                    <li>Généré aléatoirement</li>
-                    <li>Sécurise les requêtes <i>ex : ?id=27&<strong>token=45421587d1s548s</strong></i></li>
-                    <li>L'attaquant ne peut donc jamais le connaître</li>
-                </ul>
-            </section>
             <section>
                 <section>
                     <h2>Exemple 1</h2>
                     <p>Attaque csrf avec execution de formulaire</p>
                 </section>
                 <section>
-                    <img data-src="/dist/images/csrf-form.png" style="width: 80%;" alt="csrf form exemple">
+                    <img data-src="/dist/images/csrf-form.svg" style="width: 80%;" alt="csrf form exemple">
+                </section>
+                <section>
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li>Content-Type Header</li>
+                        <li>Accept Header</li>
+                        <li>CORS : Access-Control-Allow-Origin</li>
+                        <li>CORS : Access-Control-Allow-Header</li>
+                    </ul>
                 </section>
             </section>
             <section>
@@ -276,9 +287,42 @@
                 <section>
                     <img data-src="/dist/images/csrf-img.svg" style="width: 80%;" alt="miss code">
                 </section>
+                <section>
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li>Desactiver le load automatique du HTML</li>
+                        <li>Mettre des guards sur les actions sensibles de l'application</li>
+                    </ul>
+                </section>
+            </section>
+            <section data-auto-animate>
+                <h3>CSRF Token</h3>
+                <ul>
+                    <li>Généré aléatoirement</li>
+                    <li>Sécurise les requêtes <br /><i>ex : ?id=27&<strong>token=45421587d1s548s</strong></i></li>
+                    <li>L'attaquant ne peut donc jamais le connaître</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Plus de references :</h2>
+                <ul>
+                    <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html">OWASP CSRF page</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/CORS">Cross Origin Request Policy from the web bible</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Une video qui résume bien</h3>
+                <iframe width="994" height="559" src="https://www.youtube.com/embed/X7SPRJaPL9c"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </section>
+            <section>
+                <h3>Merci pour votre attention !</h3>
+                <h3>Des questions ?</h3>
+                <iframe src="https://giphy.com/embed/IB9foBA4PVkKA" width="350" height="345" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/dancing-dance-excited-IB9foBA4PVkKA">via GIPHY</a></p>
             </section>
         </div>
-
     </div>
 
     <script src="../dist/reveal.js"></script>
