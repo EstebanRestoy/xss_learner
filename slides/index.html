@@ -178,6 +178,102 @@
             </section>
 
             <section>
+                <section>
+                    <h3>Code XSS connu</h3>
+                    <p>source : 
+                        <a href="https://www.softwaretestinghelp.com/cross-site-scripting-xss-attack-test/">
+                            softwaretestinghelp.com
+                        </a>
+                    </p>
+                </section>
+                <section>
+                    test
+                </section>
+                <section>
+                    test 2
+                </section>
+            </section>
+
+            <section data-auto-animate>
+                <h3>Se protéger face au XSS</h3>
+                <p>(Au niveau du code)</p>
+            </section>
+            <section data-auto-animate>
+                <h3>Se protéger face au XSS</h3>
+                <p>(Au niveau du code)</p>
+                <br/>
+                <ul>
+                    <li>Changer les "&lt" en "&lt&lt"</li>
+                </ul>
+            </section>
+            <section data-auto-animate>
+                <h3>Se protéger face au XSS</h3>
+                <p>(Au niveau du code)</p>
+                <br/>
+                <ul>
+                    <li>Changer les "&lt" en "&lt&lt"</li>
+                    <li>Supprimer les balises "&ltscript&gt" englobantes</li>
+                </ul>
+            </section>
+            <section data-auto-animate>
+                <h3>Se protéger face au XSS</h3>
+                <p>(Au niveau du code)</p>
+                <br/>
+                <ul>
+                    <li>Changer les "&lt" en "&lt&lt"</li>
+                    <li>Supprimer les balises "&ltscript&gt" englobantes</li>
+                    <br/>
+                    <li>Sécuriser les entrées de l'application</li>
+                    <li>Faire des audits de sécurité</li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <section>
+                    <h3>Contourner les protections</h3>
+                </section>
+
+                <section data-auto-animate>
+                    <h3>Changer les "&lt" en "&lt&lt"</h3>
+                    <br/>
+                    <p>Il est possible de representer les chevrons par leurs versions encodés</p>
+                    <br>
+                    <p>&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                </section>
+                <section data-auto-animate>
+                    <h3>Changer les "&lt" en "&lt&lt"</h3>
+                    <br/>
+                    <p>Il est possible de representer les chevrons par leurs versions encodés</p>
+                    <br>
+                    <p>&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p>=</p>
+                    <p>%3cscript%3ealert(document.cookie)%3c/script%3e</p>
+                </section>
+
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" englobantes</h3>
+                    <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p style="color: crimson;"> => alert(document.cookie)</p>
+                </section>
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" englobantes</h3>
+                    <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p style="color: crimson;"> => alert(document.cookie)</p>
+                    <p>Il suffit de doubler les balises &ltscript&gt</p>
+                </section>
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" englobantes</h3>
+                    <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p style="color: crimson;"> => alert(document.cookie)</p>
+                    <p>Il suffit de doubler les balises &ltscript&gt</p>
+                    <p style="color: aqua;">&ltscript&gt&ltscript&gtalert(document.cookie)&lt/script&gt&lt/script&gt</p>
+                    <p style="color: crimson;"> => &ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                </section>
+            </section>
+
+            <section>
                 <h3>Une video qui résume bien</h3>
 
                 <iframe width="994" height="559" src="https://www.youtube.com/embed/Bkg7JoBs2ac"
