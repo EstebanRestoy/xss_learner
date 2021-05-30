@@ -245,7 +245,16 @@
                     <p>Attaque csrf avec execution de formulaire</p>
                 </section>
                 <section>
-                    <img data-src="/dist/images/csrf-form.png" style="width: 80%;" alt="csrf form exemple">
+                    <img data-src="/dist/images/csrf-form.svg" style="width: 80%;" alt="csrf form exemple">
+                </section>
+                <section>
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li>Content-Type Header</li>
+                        <li>Accept Header</li>
+                        <li>CORS : Access-Control-Allow-Origin</li>
+                        <li>CORS : Access-Control-Allow-Header</li>
+                    </ul>
                 </section>
             </section>
             <section>
@@ -256,9 +265,15 @@
                 <section>
                     <img data-src="/dist/images/csrf-img.svg" style="width: 80%;" alt="miss code">
                 </section>
+                <section>
+                    <h3>Solutions</h3>
+                    <ul>
+                        <li>Desactiver le load automatique du HTML</li>
+                        <li>Mettre des guards sur les actions sensibles de l'application</li>
+                    </ul>
+                </section>
             </section>
         </div>
-
     </div>
 
     <script src="../dist/reveal.js"></script>
