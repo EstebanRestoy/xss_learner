@@ -177,14 +177,20 @@
                 </p>
             </section>
 
-            <section>
-                  <h3>Code XSS connu</h3>
-                    <p>source : 
-                    <a href="https://www.softwaretestinghelp.com/cross-site-scripting-xss-attack-test/">
-                            softwaretestinghelp.com
-                   </a>
-                </p>
+            <section data-auto-animate> 
+                <h3>Code XSS connu</h3>
+                <p>source : https://apcpedagogie.com/les-injections-html-xss/</p>
+                <img data-src="dist/images/destPage.png" style="width: 80%;" alt="dealabs home">
             </section>
+            <section data-auto-animate> 
+                <h3>Code XSS connu</h3>
+                <img data-src="dist/images/Redirection.png" style="width: 80%;" alt="dealabs home">
+            </section>
+            <section data-auto-animate> 
+                <h3>Code XSS connu</h3>
+                <img data-src="dist/images/VolCookies.png" style="width: 80%;" alt="dealabs home">
+            </section>
+            
             
             <section data-auto-animate>
                 <h3>Se protéger face au XSS</h3>
@@ -204,7 +210,7 @@
                 <br/>
                 <ul>
                     <li>Changer les "&lt" en "&lt&lt"</li>
-                    <li>Supprimer les balises "&ltscript&gt" englobantes</li>
+                    <li>Supprimer les balises "&ltscript&gt"</li>
                 </ul>
             </section>
             <section data-auto-animate>
@@ -213,7 +219,7 @@
                 <br/>
                 <ul>
                     <li>Changer les "&lt" en "&lt&lt"</li>
-                    <li>Supprimer les balises "&ltscript&gt" englobantes</li>
+                    <li>Supprimer les balises "&ltscript&gt"</li>
                     <br/>
                     <li>Sécuriser les entrées de l'application</li>
                     <li>Faire des audits de sécurité</li>
@@ -245,23 +251,49 @@
                 </section>
 
                 <section data-auto-animate>
-                    <h3>Supprimer les balises "&ltscript&gt" englobantes</h3>
+                    <h3>Supprimer les balises "&ltscript&gt"</h3>
                     <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
                     <p style="color: crimson;"> => alert(document.cookie)</p>
                 </section>
                 <section data-auto-animate>
-                    <h3>Supprimer les balises "&ltscript&gt" englobantes</h3>
+                    <h3>Supprimer les balises "&ltscript&gt"</h3>
                     <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
                     <p style="color: crimson;"> => alert(document.cookie)</p>
-                    <p>Il suffit de doubler les balises &ltscript&gt</p>
+                    <p>Il suffit d'imbriquer les balises &ltscript&gt</p>
                 </section>
                 <section data-auto-animate>
-                    <h3>Supprimer les balises "&ltscript&gt" englobantes</h3>
+                    <h3>Supprimer les balises "&ltscript&gt"</h3>
                     <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
                     <p style="color: crimson;"> => alert(document.cookie)</p>
-                    <p>Il suffit de doubler les balises &ltscript&gt</p>
-                    <p style="color: aqua;">&ltscript&gt&ltscript&gtalert(document.cookie)&lt/script&gt&lt/script&gt</p>
+                    <p>Il suffit d'imbriquer les balises &ltscript&gt</p>
+                    <p style="color: aqua;">&ltsc&ltscript&gtript&gtalert(document.cookie)&lt/sc&lt/script&gtript&gt</p>
                     <p style="color: crimson;"> => &ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                </section>
+
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" (2)</h3>
+                    <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p style="color: crimson;"> => alert(document.cookie)</p>
+                </section>
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" (2)</h3>
+                    <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p style="color: crimson;"> => alert(document.cookie)</p>
+                    <p>on peut essayer avec des des majuscules</p>
+                </section>
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" (2)</h3>
+                    <p style="color: aqua;">&ltscript&gtalert(document.cookie)&lt/script&gt</p>
+                    <p style="color: crimson;"> => alert(document.cookie)</p>
+                    <p>on peut essayer avec des des majuscules</p>
+                    <p style="color: aqua;">&ltsCript&gtalert(document.cookie)&lt/sCRIpt&gt</p>
+                    <p style="color: crimson;"> => &ltsCript&gtalert(document.cookie)&lt/sCRIpt&gt</p>
+                </section>
+
+                <section data-auto-animate>
+                    <h3>Supprimer les balises "&ltscript&gt" (3)</h3>
+                    <p>Ne pas passer par une balise &ltscript&gt</p>
+                    <p style="color: aqua;">&ltimg src='zzz.jpg' onerror= alert('xss') &gt&lt/img&gt</p>
                 </section>
             </section>
 
