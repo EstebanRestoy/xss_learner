@@ -33,7 +33,7 @@ h1 {
     margin: 50px 0 50px 0 ;
     font-size: 78px;
 }
-input{
+input, textarea{
 	width: 30%;
 	height: 7vh;
 	display: block;
@@ -63,3 +63,16 @@ button:hover{
 	transform: scale(1.2);
 }
 
+li{
+	list-style-type: none; 
+	font-size: 50px;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+}
+ul{
+	padding: 10px 10px 10px 10px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}

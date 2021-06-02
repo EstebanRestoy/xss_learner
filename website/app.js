@@ -1,41 +1,47 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
-var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const Database = require('better-sqlite3');
+var cors = require('cors')
+
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var repoRouter = require('./routes/repository');
 
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+app.use(cors())
+
+const dropTable = "DROP TABLE IF EXISTS article;";
+const createTable = "CREATE TABLE article ('title' varchar, 'description' varchar);"
+
+const db = new Database('articles.db', { verbose: console.log });
+
+db.exec(dropTable);
+db.exec(createTable);
+
+const insert = db.prepare('INSERT INTO article (title, description) VALUES (@title, @desc)');
+const insertMany = db.transaction((articles) => {
+  for (const article of articles) insert.run(article);
+});
+
+insertMany([
+  { title: "title1", desc: "desc1" },
+  { title: "title2", desc: "desc2" }
+]);
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
+  
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', repoRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+app.use(function(req, res ) {
+  res.status(404).send("route not FOUND");
 });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
 
 module.exports = app;

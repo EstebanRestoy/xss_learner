@@ -23,6 +23,11 @@
                 <p>Lise Antoine Victor Esteban</p>
             </section>
 
+            <section>
+                <h2>Cours disponible ici :</h2>
+                <a href="https://xsslearner.herokuapp.com/slides#/">https://xsslearner.herokuapp.com/slides#/</a>
+            </section>
+
             <section data-auto-animate>
                 <h3>XSS</h3>
             </section>
@@ -177,21 +182,21 @@
                 </p>
             </section>
 
-            <section data-auto-animate> 
+            <section data-auto-animate>
                 <h3>Code XSS connu</h3>
                 <p>source : https://apcpedagogie.com/les-injections-html-xss/</p>
                 <img data-src="dist/images/destPage.png" style="width: 80%;" alt="dealabs home">
             </section>
-            <section data-auto-animate> 
+            <section data-auto-animate>
                 <h3>Code XSS connu</h3>
                 <img data-src="dist/images/Redirection.png" style="width: 80%;" alt="dealabs home">
             </section>
-            <section data-auto-animate> 
+            <section data-auto-animate>
                 <h3>Code XSS connu</h3>
                 <img data-src="dist/images/VolCookies.png" style="width: 80%;" alt="dealabs home">
             </section>
-            
-            
+
+
             <section data-auto-animate>
                 <h3>Se protéger face au XSS</h3>
                 <p>(Au niveau du code)</p>
@@ -199,7 +204,7 @@
             <section data-auto-animate>
                 <h3>Se protéger face au XSS</h3>
                 <p>(Au niveau du code)</p>
-                <br/>
+                <br />
                 <ul>
                     <li>Changer les "&lt" en "&lt&lt"</li>
                 </ul>
@@ -207,7 +212,7 @@
             <section data-auto-animate>
                 <h3>Se protéger face au XSS</h3>
                 <p>(Au niveau du code)</p>
-                <br/>
+                <br />
                 <ul>
                     <li>Changer les "&lt" en "&lt&lt"</li>
                     <li>Supprimer les balises "&ltscript&gt"</li>
@@ -216,11 +221,11 @@
             <section data-auto-animate>
                 <h3>Se protéger face au XSS</h3>
                 <p>(Au niveau du code)</p>
-                <br/>
+                <br />
                 <ul>
                     <li>Changer les "&lt" en "&lt&lt"</li>
                     <li>Supprimer les balises "&ltscript&gt"</li>
-                    <br/>
+                    <br />
                     <li>Sécuriser les entrées de l'application</li>
                     <li>Faire des audits de sécurité</li>
                 </ul>
@@ -235,14 +240,14 @@
 
                 <section data-auto-animate>
                     <h3>Changer les "&lt" en "&lt&lt"</h3>
-                    <br/>
+                    <br />
                     <p>Il est possible de representer les chevrons par leurs versions encodés</p>
                     <br>
                     <p>&ltscript&gtalert(document.cookie)&lt/script&gt</p>
                 </section>
                 <section data-auto-animate>
                     <h3>Changer les "&lt" en "&lt&lt"</h3>
-                    <br/>
+                    <br />
                     <p>Il est possible de representer les chevrons par leurs versions encodés</p>
                     <br>
                     <p>&ltscript&gtalert(document.cookie)&lt/script&gt</p>
@@ -383,7 +388,7 @@
                 <section>
                     <img data-src="/dist/images/fetch-example.svg" style="width: 80%;" alt="miss code">
                 </section>
-                 <section>
+                <section>
                     <h3>Solutions</h3>
                     <ul>
                         <li>CORS : Access-Control-Allow-Origin</li>
