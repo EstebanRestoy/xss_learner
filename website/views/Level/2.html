@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<meta charset="utf-8">
+<title>level 2</title>
+<link rel="stylesheet" href="/stylesheets/styles.css">
+</head>
+
+<body>
+    <div style="display: flex;">
+        <div style="flex: 7 auto">
+            <h1>Level 2</h1>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ullam vel cumque expedita totam id
+                    quam voluptates, error suscipit delectus quia at maxime natus eum perferendis autem ad earum? Nam?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellat. Possimus ex incidunt
+                    corporis rerum, voluptatum tempore odio deserunt est, nostrum, blanditiis porro. Beatae sint maiores
+                    officia cumque odio dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et natus
+                    placeat facere reiciendis ducimus nostrum hic nihil doloribus, dolores ipsum in. Ipsa excepturi
+                    repellat repudiandae sed eveniet omnis fugiat maxime. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Sunt, voluptates magni esse deserunt iste ex dignissimos quo dolore. Optio fuga
+                    similique laborum provident numquam odio voluptatum autem dolorem sequi quae.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque ullam vel cumque expedita totam id
+                    quam voluptates, error suscipit delectus quia at maxime natus eum perferendis autem ad earum? Nam?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat magnam tempore impedit nobis sed
+                    aliquam amet voluptatum esse nihil enim laborum, beatae, dolorem numquam doloribus eos illo omnis ea
+                    unde.
+                </p>
+            </div>
+            <br/>
+            <div class="container" id="num_page" style="text-align: center;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const num = urlParams.get('page');
+    var numPage = document.getElementById("num_page");
+    numPage.innerHTML = "Page " + num
+
+</script>
